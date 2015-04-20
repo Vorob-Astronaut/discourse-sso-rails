@@ -1,0 +1,2 @@
+class DiscourseSSO::Request
+end
