@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Egor Vorobiev"]
   spec.email         = ["vorobievegoralexandrovich@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
+  spec.summary       = %q{Simple integration with discourse sso}
   spec.homepage      = "https://github.com/Vorob-Astronaut/discourse-sso-rails"
   spec.license       = "MIT"
 
