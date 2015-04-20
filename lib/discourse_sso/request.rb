@@ -1,11 +1,13 @@
-class DiscourseSSO::Request
-  attr_accessor :user
+class DiscourseSSO
+  class Request
+    attr_accessor :user
 
-  def initialize(sso:, sig:)
-    self.sso = sso
-    self.sig = sig
-  end
+    def initialize(sso:, sig:)
+      self.sso = sso
+      self.sig = sig
+    end
 
-  def callback_url
+    def callback_url
+    end
   end
 end

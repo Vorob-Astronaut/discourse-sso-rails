@@ -1,12 +1,14 @@
 require 'singleton'
 
-class DiscourseSSO::Config
-  include Singleton
-  attr_accessor :secret
+class DiscourseSSO
+  class Config
+    include Singleton
+    attr_accessor :secret
 
-  def self.configure(&block)
-    config = self.instance
+    def self.configure(&block)
+      config = self.instance
 
-    block.call(config)
+      block.call(config)
+    end
   end
 end
