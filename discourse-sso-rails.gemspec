@@ -1,17 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'discourse/sso/rails/version'
+require 'discourse_sso/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "discourse-sso-rails"
-  spec.version       = Discourse::Sso::Rails::VERSION
+  spec.version       = DiscourseSSO::VERSION
   spec.authors       = ["Egor Vorobiev"]
   spec.email         = ["vorobievegoralexandrovich@gmail.com"]
 
   spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/Vorob-Astronaut/discourse-sso-rails"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
