@@ -28,7 +28,7 @@ end
 
 # app/controllers/sso_controller.rb
 def authenticate
-  sso = DiscourseSSO::Request.new(params[:sso], params[:sig])
+  sso = DiscourseSSO::Request.new(sso: params[:sso], sig: params[:sig])
 
   sso.user = {
     name: "Bruce Lee",
